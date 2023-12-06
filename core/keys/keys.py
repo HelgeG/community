@@ -126,11 +126,12 @@ modifier_keys = {
     "alt": "alt",  #'alter': 'alt',
     "control": "ctrl",  #'troll':   'ctrl',
     "shift": "shift",  #'sky':     'shift',
-    "super": "super",
+    "super": "super"
 }
 if app.platform == "mac":
     modifier_keys["command"] = "cmd"
     modifier_keys["option"] = "alt"
+    modifier_keys["hyper"] = "shift-ctrl-cmd-alt"
 ctx.lists["self.modifier_key"] = modifier_keys
 ctx.lists["self.letter"] = alphabet_list
 
